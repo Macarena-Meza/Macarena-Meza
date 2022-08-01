@@ -11,7 +11,7 @@
   Ethan :: AboutMe = {
     Pronouns: ["She", "Her"],
     AskMeAbout: ["web dev", "music", "app dev", "coding"],
-    Languages: ["HTML", "CSS", "JavaScript", "Bootstrap", "Python", "R"],
+    Tecnologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Python", "R", "ABAP"],
     Databases: ["SQL, Power bi"]
    
   def doing(self, now=2022):
@@ -19,10 +19,8 @@
 
         if now < today:
             experience = self.unemployment['without experience']
-            return """
         elif now = today:
             dream = self.professional['programming']
-            return """
             I am currently learning {code} at {code_institute}.
             """.format(code=dream[0], code_institute=dream[1])
         elif now > today:
